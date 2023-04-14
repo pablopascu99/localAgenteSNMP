@@ -76,7 +76,7 @@ transportDispatcher.registerRecvCbFun(cbFun)
 print("Corre")
 # UDP/IPv4
 transportDispatcher.registerTransport(
-    udp.domainName, udp.UdpSocketTransport().openServerMode(('127.0.0.1', 162))
+    udp.domainName, udp.UdpSocketTransport().openServerMode(('localhost', 162))
 )
 
 # # UDP/IPv6
